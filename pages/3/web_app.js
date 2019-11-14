@@ -94,11 +94,11 @@ function renderCommentForm(film) {
         '<form class="form-body">' +
         '<input type="text" id="author-' + film.name + '" placeholder="Ваше имя" class="form-author" required>' +
         '<input type="text" id="comment-' + film.name + '" placeholder="Ваш отзыв" class="form-comment" required>' +
-        '<div class="rating">'
+        '<span class="rating">'
     for (let i = 10; i > 0; i--) {
         content += '<input type="radio" class="star" id="'+film.name+'-star-'+i+'" name="rating" value="'+i+'" /><label for="'+film.name+'-star-'+i+'"></label>'
     }
-    content += '</div><button onclick="onAddComment(\'' + film.name + '\')">Отправить</button>' +
+    content += '</span><button onclick="onAddComment(\'' + film.name + '\')">Отправить</button>' +
         '</form>'
     const form = document.createElement("div")
     form.classList.add("comment-form")

@@ -160,15 +160,17 @@ section h1 {
 
 .rating {
   min-width: 218px;
-  height: 20px;
   margin: 9px;
+}
+
+.rating input {
+  display: none;
 }
 
 .rating label {
   float: right;
-  position: relative;
+  color: #CCC;
   width: 20px;
-  height: 20px;
   cursor: pointer;
 }
 
@@ -177,18 +179,12 @@ section h1 {
 }
 
 .rating label:before {
-  content: "\2B50";
-  font-size: 22px;
-  color: #CCC;
-  line-height: 1;
+  content: "\2729";
+  font-size: 28px;
 }
 
-.rating input {
-  display: none;
-}
-
-.rating input:checked~label:before,
-.rating:not(:checked)>label:hover:before,
-.rating:not(:checked)>label:hover~label:before {
+.rating label:hover,
+.rating input:checked~label,
+.rating label:hover~label {
   color: #fc5e03;
 }
