@@ -348,6 +348,11 @@ a {
   background-color: #d45e5e;
 }
 
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .footer img {
   vertical-align: middle;
   margin-right: 14px;
@@ -478,6 +483,7 @@ a {
 .footer__skills figcaption {
   font-family: ptSansR;
   margin-right: 9px;
+  min-width: 60px;
 }
 
 .footer__graph {
